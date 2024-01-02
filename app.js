@@ -18,21 +18,14 @@ sr.reveal(".intro-text p", { delay: 700, origin: "right" });
 sr.reveal(".intro-text .main-btn", { delay: 750, origin: "left" });
 sr.reveal(".img", { delay: 750, origin: "right" });
 
-sr2.reveal(".my-skills", { delay: 400, origin: "right" });
-sr2.reveal(".project-1", { delay: 400, origin: "left" });
-sr2.reveal('#two',{delay:400,origin:"right" })
+// sr2.reveal(".my-skills", { delay: 400, origin: "right" });
+// sr2.reveal(".project-1", { delay: 400, origin: "left" });
+// sr2.reveal('#two',{delay:400,origin:"right" })
 
 
 
 
 
-
-function navopen() {
-  document.getElementById("nav").style.display = "grid"
-}
-function navclose() {
-  document.getElementById("nav").style.display = "none";
-}
 
 
 
