@@ -5,6 +5,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  overflow-x: hidden;
 }
 
 :root {
@@ -57,7 +58,7 @@ body {
   color: var(--white-color);
   cursor: pointer;
 }
-.header > #nav > li > a:hover {
+.custom-clr:hover {
   color: var(--text-color);
 }
 
@@ -112,6 +113,30 @@ body {
   font-size: 2rem;
   font-weight: 600;
 }
+
+.custom-img {
+  animation-name: img-pic;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transition: transform 2s linear;
+}
+
+@keyframes img-pic {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .main-btn {
   display: flex;
   gap: 10px;
@@ -217,9 +242,7 @@ img {
   gap: 10px;
 }
 .dis-role {
-  padding: 10px;
   background-color: #333333;
-  max-height: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,13 +353,13 @@ img {
   gap: 40px;
 }
 
-.border {
+.b-bottom {
   border-bottom: 4px solid var(--text-color);
 }
 .all {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 20px;
+  padding: 10px 10px;
   gap: 15px;
 }
 
@@ -345,15 +368,14 @@ img {
   flex-direction: column;
   gap: 10px;
   min-width: 423px;
-  padding: 20px 30px;
+  padding: 20px 20px;
   flex: 1;
   transition: ease-in-out;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-property: all;
   transition-duration: 1s;
-  box-shadow: 15px 17px 111px 17px rgba(0, 0, 0, 0.97);
-  -webkit-box-shadow: 15px 17px 111px 17px rgba(0, 0, 0, 0.97);
-  -moz-box-shadow: 15px 17px 111px 17px rgba(0, 0, 0, 0.97);
+  box-shadow: rgba(60, 64, 67, 0.5) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.5) 0px 2px 6px 2px;
 }
 
 .course:hover {
@@ -370,7 +392,7 @@ img {
     margin: 20px;
   }
 }
-.project > h1 {
+.project > .costom-div-project {
   align-self: center;
   justify-self: center;
 }
@@ -426,6 +448,8 @@ footer {
 }
 .all {
   margin-top: 50px;
+  display: flex;
+  width: 100%;
 }
 .details {
   align-self: self-start;
@@ -433,7 +457,7 @@ footer {
   flex: 1;
   gap: 25px;
   height: 100%;
-  min-width: 600px;
+  /* min-width: 600px; */
 }
 .details h2 {
   margin-bottom: 15px;
@@ -451,7 +475,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
 
-  width: calc(100vw - 100px);
 }
 .clintinfo {
   display: grid;
@@ -573,5 +596,11 @@ footer .social .fa {
 @media (min-width: 501px) {
   .header .menu-btn {
     display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro {
+    margin-top: 15%;
   }
 }

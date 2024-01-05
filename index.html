@@ -58,32 +58,34 @@
         <div class="navbar-collapse collapse" id="navmenu">
           <ul class="navbar-nav ms-auto me-lg-5">
             <li class="nav-item me-1">
-              <a class="nav-link active" href="#intro"> Home </a>
+              <a class="nav-link active icon-link-hover" href="#intro">
+                Home
+              </a>
             </li>
             <li class="nav-item me-1">
-              <a class="nav-link" href="#my-skills"> Skills </a>
+              <a class="nav-link custom-clr" href="#my-skills"> Skills </a>
             </li>
             <li class="nav-item me-1">
-              <a class="nav-link" href="#project"> Blogs </a>
+              <a class="nav-link custom-clr" href="#project"> Blogs </a>
             </li>
             <li class="nav-item me-1">
-              <a class="nav-link" href="#details"> Contact </a>
+              <a class="nav-link custom-clr" href="#details"> Contact </a>
             </li>
             <li class="nav-item me-1">
-              <a class="nav-link" href=""> About </a>
+              <a class="nav-link custom-clr" href=""> About </a>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    <div class="container">
+    <div>
       <div class="intro" id="intro">
         <div class="intro-text">
           <span id="logo">Front-end Developer</span>
-          <h1>Balaji</h1>
-          <p>Hi There!</p>
+          <h1 class="display-2">Balaji</h1>
+          <p class="display-5">Hi There!👋</p>
           <p class="role-p">I Am a Creative <span class="role"></span></p>
-          <div class="main-btn">
+          <div class="main-btn pt-md-2 pt-lg-1">
             <a href="#" class="btn" onclick="window.open('images/Resume.pdf')"
               >Download CV</a
             >
@@ -95,9 +97,9 @@
             >
           </div>
         </div>
-        <div class="intro-profile">
-          <div class="p-div">
-            <img src="images/profile.PNG" alt="" id="profile" />
+        <div class="intro-profile pe-4 pt-3 pb-3">
+          <div class="p-div custom-img imgs profile">
+            <img src="images/profile.PNG" alt="" class="profile" id="profile" />
           </div>
         </div>
       </div>
@@ -123,21 +125,24 @@
             <p><b>age</b>: 21</p>
             <p><b>gender</b>: Male</p>
             <p><b>Language</b>: Tamil, English</p>
-            <p><b>work</b>: Front-End Developer</p>
+            <p><b>Experience</b>: Fresher</p>
           </div>
-          <div class="dis">
-            <div class="dis-role">
+          <div class="dis align-items-center">
+            <div class="dis-role p-3">
               <h2>fresher</h2>
             </div>
-            <div class="dis-role">
-              <h2 class="role">10+</h2>
-              <h2>project</h2>
+            <div class="dis-role pt-2 ps-3 pe-3">
+              <h3 class="role">10+</h3>
+              <p class="">Projects</p>
             </div>
           </div>
         </div>
       </div>
       <div class="my-skills" id="my-skills">
-        <h1><span class="role">My</span> <span class="border">Skills</span></h1>
+        <div class="d-flex gap-2">
+          <h1 class="role">My</h1>
+          <h1 class="b-bottom">Skills</h1>
+        </div>
         <div class="all-skill">
           <div class="skill">
             <div class="outer">
@@ -311,12 +316,12 @@
         </div>
       </div>
       <div class="qualification">
-        <h1>
-          <span class="role">My </span>
-          <span class="border">Qualifaction</span>
-        </h1>
-        <div class="all">
-          <div class="course">
+        <div class="d-flex gap-2">
+          <h1 class="role">My</h1>
+          <h1 class="b-bottom">Qualification</h1>
+        </div>
+        <div class="all pt-5">
+          <div class="course ps-5 pe-5">
             <p>2019 - 2023</p>
             <h2>Arts And Science</h2>
             <h4>Bachelor of commerce</h4>
@@ -334,7 +339,7 @@
               and contribute to innovative web development solutions.
             </p>
           </div>
-          <div class="course">
+          <div class="course pe-5">
             <p>2023</p>
             <h1>Internship</h1>
             <h3>CODSOFT</h3>
@@ -352,9 +357,10 @@
         </div>
       </div>
       <div class="project" id="project">
-        <h1>
-          <span class="role">My</span> <span class="border">projests</span>
-        </h1>
+        <div class="d-flex gap-2 costom-div-project">
+          <h1 class="">My</h1>
+          <h1 class="b-bottom">Projects</h1>
+        </div>
 
         <div class="project-1">
           <div class="img-container">
@@ -387,12 +393,13 @@
         </div>
       </div>
       <footer>
-        <h1>
-          <span class="border">Contact</span> <span class="role">Me</span>
-        </h1>
-        <div class="all">
+        <div class="d-flex gap-2">
+          <h1 class="role">Contact</h1>
+          <h1 class="b-bottom">Me</h1>
+        </div>
+        <div class="all pe-5 flex-sm-column flex-lg-row">
           <div class="details" id="details">
-            <h2>Get in Touch</h2>
+            <h2 class="role">Get in Touch</h2>
             <div>
               <h4>Phone :</h4>
               <p>+91 9123555062</p>
@@ -408,7 +415,7 @@
               <a
                 href="https://www.linkedin.com/in/chandrabalaji/"
                 target="_blank"
-                class="a-tag"
+                class="a-tag text-decoration-none"
                 >linkedin.com/in/chandrabalaji</a
               >
             </div>
@@ -438,13 +445,13 @@
         </div>
 
         <div class="social">
-          <a href="#" class="fa fa-facebook-f"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-facebook-f nav-link"></a>
+          <a href="#" class="fa fa-twitter nav-link"></a>
+          <a href="#" class="fa fa-instagram nav-link"></a>
           <a
             href="https://www.linkedin.com/in/chandrabalaji/"
             target="_blank"
-            class="fa fa-linkedin"
+            class="fa fa-linkedin nav-link"
           ></a>
         </div>
         <div class="social Rights">
